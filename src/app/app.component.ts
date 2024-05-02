@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { IconSpriteService } from 'ng-svg-icon-sprite';
 
 @Component({
@@ -6,7 +6,7 @@ import { IconSpriteService } from 'ng-svg-icon-sprite';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
 
   public changed = false;
   public changeDone = false;
@@ -15,8 +15,6 @@ export class AppComponent implements OnInit {
     // Optionally inject the icon sprite service to set path manually
     private iconSpriteService: IconSpriteService
   ) {}
-
-  ngOnInit() {}
 
   // Optionally, change the default sprite path during runtime
   changeDefaultSpritePath() {
