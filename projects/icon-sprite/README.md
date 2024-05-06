@@ -212,8 +212,7 @@ Or use combinations of several methods to achieve better results, like described
 
 ## Compatibility
 
-This library is optimized for Angular 17+, for 14 use [v. 1.12](https://www.npmjs.com/package/ng-svg-icon-sprite/v/1.12.0).
-If you combine multiple frameworks (i.e. React, Vue, etc.), it is recommended to use [svg-icon-sprite web component](https://www.npmjs.com/package/svg-icon-sprite) instead!
+This library is optimized for Angular 17+. If you combine multiple frameworks (i.e. React, Vue, etc.), it is recommended to use [svg-icon-sprite web component](https://www.npmjs.com/package/svg-icon-sprite) instead!
 
 ## Author & License
 
