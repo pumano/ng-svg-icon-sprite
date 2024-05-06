@@ -1,4 +1,4 @@
-import { async, ComponentFixture, inject, TestBed } from '@angular/core/testing';
+import { ComponentFixture, inject, TestBed } from '@angular/core/testing';
 import { IconSpriteComponent } from './icon-sprite.component';
 import { IconSpriteDirective } from './icon-sprite.directive';
 import { IconSpriteService } from './icon-sprite.service';
@@ -7,7 +7,7 @@ describe('IconSpriteComponent', () => {
   let component: IconSpriteComponent;
   let fixture: ComponentFixture<IconSpriteComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       declarations: [
         IconSpriteComponent,
@@ -15,7 +15,7 @@ describe('IconSpriteComponent', () => {
       ]
     })
     .compileComponents();
-  }));
+  });
 
   beforeEach(() => {
     fixture = TestBed.createComponent(IconSpriteComponent);
@@ -132,7 +132,7 @@ describe('IconSpriteComponent using Service', () => {
   let component: IconSpriteComponent;
   let fixture: ComponentFixture<IconSpriteComponent>;
 
-  beforeEach(async(() => {
+  beforeEach(async () => {
     TestBed.configureTestingModule({
       declarations: [
         IconSpriteComponent,
@@ -141,7 +141,7 @@ describe('IconSpriteComponent using Service', () => {
       providers: [IconSpriteService]
     })
     .compileComponents();
-  }));
+  });
 
   it('should access the default sprite path via its IconSpriteService',
     inject([IconSpriteService], (iconSpriteService: IconSpriteService) => {

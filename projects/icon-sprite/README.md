@@ -1,4 +1,4 @@
-# SVG icon sprite component for Angular 16
+# SVG icon sprite component for Angular 17+
 
 This library provides both a solution for generating SVG sprites and a [module](https://www.npmjs.com/package/ng-svg-icon-sprite) for including them.
 
@@ -62,7 +62,7 @@ Each time you add an icon, you need to run the script generating the sprite. You
 
 now execute the script:
 
-```
+```bash
 npm run generate:svg-sprite
 ```
 
@@ -72,7 +72,7 @@ go for the multi-color pattern [described below](#user-content-dealing-with-mult
 The script will take all SVG icons under `src/app/assets/icons` and create a sprite SVG into
 `src/app/assets/sprites` using the [svg symbols technique](https://css-tricks.com/svg-symbol-good-choice-icons/):
 
-```
+```bash
 app
 └── assets
     └── icons (icons source)
@@ -129,7 +129,7 @@ color: red;
 
 If you have another asset folder structure, set your input and output path in the npm script:
 
-```
+```bash
 svg2sprite sourcefolder destination/filename.svg
 ```
 
@@ -183,6 +183,7 @@ You can now leave out the path and just provide the icon name ([demo](https://ja
 Doing so you will still be able to override the default path by using the full syntax for particular icons that should use a different sprite file.
 
 ## Browser Support
+
 - Chrome (63)
 - Firefox (57)
 - Safari 11
@@ -191,6 +192,7 @@ Doing so you will still be able to override the default path by using the full s
 ## Accessibility
 
 In order to support screen readers and make the icons meaningful, you can use following patters:
+
 - add a `title` with descriptive text ([demo](https://jannicz.github.io/ng-svg-icon-sprite/#a11y))
 - optionally reference the title node using `aria-labelledby=”icon-title”`
 - optionally set the node's `role` to image (`role=”img”`)
@@ -210,8 +212,8 @@ Or use combinations of several methods to achieve better results, like described
 
 ## Compatibility
 
-This library is optimized for Angular 16, for 14 use [v. 1.12](https://www.npmjs.com/package/ng-svg-icon-sprite/v/1.12.0).
-If you combine multiple frameworks (i.e. React, Vue, etc.), it is recommended to use [svg-icon-sprite web component](https://www.npmjs.com/package/svg-icon-sprite) instead!
+This library is optimized for Angular 17+. If you combine multiple frameworks (i.e. React, Vue, etc.), it is recommended to use [svg-icon-sprite web component](https://www.npmjs.com/package/svg-icon-sprite) instead!
 
 ## Author & License
+
 - Jan Suwart | MIT License
